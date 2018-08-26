@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cennik - wieczory panieńskie</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: arial, sans-serif;
+        }
+
+        h1 {
+            max-width: 1200px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 20px auto;
+        }
+
+        section {
+            height: 80vh;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            max-width: 1200px;
+            justify-content: space-around;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background-color: #bbb;
+            align-items: center;
+        }
+        .col >*{
+            padding-bottom:25px;
+        }
+        img {
+            display: block;
+            width: 80%;
+            align-self: center;
+        }
+
+        .price {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            flex-grow: 1;
+            justify-content: flex-end;
+        }
+
+        .price span {
+            display: block;
+            align-self: center;
+            height: 40px;
+            line-height: 20px;
+            padding: 10px;
+            border: 2px solid #222;
+            background-color: #ccc;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Wieczór panieński - zaproś naszego trola!</h1>
+    <section>
+        <div class="col">
+            <h2>Opcja 1</h2>
+            <img src="1.png" alt="">
+            <p>(bardzo) Tanio</p>
+            <p class="price">
+                <span>100 dutków</span>
+            </p>
+        </div>
+        <div class="col">
+            <h2>Opcja 2</h2>
+            <img src="2.png" alt="">
+            <p>Średnio Tanio</p>
+            <p>Wielka pałka w zestawie</p>
+            <p class="price">
+                <span>300 dutków</span>
+            </p>
+        </div>
+        <div class="col">
+            <h2>Opcja 3</h2>
+            <img src="3.png" alt="">
+            <p>Niezbyt tanio</p>
+            <p>Duża moc (wytrzyma noc)</p>
+            <p>Przystojny (jak na trola)</p>
+            <p class="price">
+                <span>500 dutków</span>
+            </p>
+        </div>
+
+    </section>
+</body>
+
+</html>
